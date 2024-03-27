@@ -38,5 +38,5 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "accidento-ui"
-          entrypoint: "https://deno.land/std@0.217.0/http/file_server.ts"
+          entrypoint: "https://deno.land/std@0.217.0/http/index.js"
           root: "build"
