@@ -18,8 +18,8 @@ function Incidents({ orgName }) {
         //     .then((data) => setIncidents(data));
     
         setIncidents([
-            { title: "Incident 1", head: 'head 1', description: 'description 1', status: "Open" },
-            { title: "Incident 2", head: 'head 2', description: 'description 2', status: "Closed" },
+            { title: "Incident 1", head: 'head 1', description: 'description 1', status: "Open", time: "2022-01-01T00:00:00Z" },
+            { title: "Incident 2", head: 'head 2', description: 'description 2', status: "Closed", time: "2022-01-01T00:00:00Z" },
         ]);
     }, [orgName]);
 
@@ -33,6 +33,7 @@ function Incidents({ orgName }) {
                     head={incident.head}
                     description={incident.description}
                     status={incident.status}
+                    time={incident.time}
                 />
             ))}
         </div>

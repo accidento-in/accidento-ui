@@ -9,7 +9,7 @@ function CreateIncident() {
     useEffect(() => {
         const userSession = JSON.parse(sessionStorage.getItem('userSession'));
     
-        if (userSession) {
+        if (!userSession) {
             setUserSessionExists(true);
         } else {
             navigate('/');

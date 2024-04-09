@@ -1,15 +1,15 @@
 import { useState } from 'react';
 
-function IncidentCard({ title, head, description, status }) {
+function IncidentCard({ title, head, description, status, time }) {
   const [incidentStatus, setStatus] = useState(status);
 
   const updateStatus = () => {
-    // fetch(`https://api.example.com/incident/${id}/status`, {
-    //   method: 'PUT',
-    //   headers: { 'Content-Type': 'application/json' },
-    //   body: JSON.stringify({ status: status === "Open" ? "Closed" : "Open" }),
-    // })
     setStatus(incidentStatus === "Open" ? "Closed" : "Open");
+  }
+
+  const localDateTime = () => {
+    const incidentDate = new Date(time);
+    return incidentDate.toLocaleString();
   }
 
   return (
@@ -23,13 +23,13 @@ function IncidentCard({ title, head, description, status }) {
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
         <button
           style={{ minWidth: '80px', minHeight: '20px', width: '20%', height: '10%' }}
-          class={ incidentStatus === "Open" ? "btn btn-success" : "btn btn-primary" }
+          class={ incidentStatus === "Open" ? "btn btn-success" : "btn btn-secondary" }
           onClick={updateStatus}>
             {incidentStatus}
         </button>
       </div>
       <div class="card-footer text-muted">
-        2 days ago
+        {localDateTime()}
       </div>
     </div>
     </div>

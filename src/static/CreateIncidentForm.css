@@ -1,0 +1,41 @@
+.create-incident-form {
+    width: 600px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #d1d5da;
+    border-radius: 6px;
+    margin: 0 auto;
+}
+
+.create-incident-form h3 {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.create-incident-form .form-group {
+    margin-bottom: 10px;
+}
+
+.create-incident-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.create-incident-form .form-group input,
+.create-incident-form .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d5da;
+    border-radius: 6px;
+}
+
+.create-incident-form .btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #2ea44f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+}
