@@ -38,5 +38,5 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "raashidanwa-accidento-u-73"
-          entrypoint: "server.js"
+          entrypoint: "build/server.js"
           root: "build"
