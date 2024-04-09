@@ -38,5 +38,5 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "accidento"
-          entrypoint: "index.htlm"
+          entrypoint: "index.html"
           root: "build"
